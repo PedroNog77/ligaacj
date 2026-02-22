@@ -61,7 +61,27 @@ nav a:hover,
 nav .active {
     color: #f5b942;
 }
+/* ===== FIX LINKS DO CALENDÁRIO ===== */
 
+.stage a {
+    color: inherit !important;
+    text-decoration: none !important;
+    display: block;
+}
+html {
+    scroll-behavior: smooth;
+}
+.stage a:visited {
+    color: inherit !important;
+}
+
+.stage a:hover {
+    color: inherit !important;
+}
+.stage-link:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
 /* ===== HERO ===== */
 
 .hero {
@@ -122,6 +142,7 @@ nav .active {
     height: 100%;
     background: #f5b942;
     border-radius: 10px;
+    
 }
 
 /* Pontinhos */
@@ -141,6 +162,8 @@ nav .active {
     background: #334155;
     border-radius: 50%;
     transition: 0.3s;
+    
+
 }
 
 .dot.completed {
@@ -165,6 +188,7 @@ nav .active {
     font-size: 13px;
     color: #64748b;
     min-width: 80px;
+     text-decoration: none;
 }
 
 .stage .name {
@@ -184,8 +208,13 @@ nav .active {
 .stage.active {
     color: #f5b942;
     font-weight: 600;
+    text-decoration: none;
 }
-
+.stage:hover {
+    color: #ffffff;
+    transform: translateY(-2px);
+    cursor: pointer;
+}
 /* ===== STATS ===== */
 
 .stats {
@@ -227,6 +256,7 @@ nav .active {
 /* ===== CAIXA GRANDE PRÊMIO ===== */
 
 .gp-box {
+    scroll-margin-top: 10vh;
     background: #0f172a;
     margin: 30px auto;
     padding: 40px;
@@ -465,4 +495,17 @@ nav {
 
 .video-description {
     margin-top: 20px;
+}
+/* ===== EDGE HIGHLIGHT NOS SQUIRCLES ===== */
+
+.stat-card,
+.gp-box,
+.video-card,
+.infraction-card,
+.podium,
+.standings-table {
+    border: 2px solid rgba(255,255,255,0.05);
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.04),
+        0 10px 30px rgba(0,0,0,0.4);
 }
