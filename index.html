@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LIGA ACJ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="LIGA ACJ Logo">
+    </div>
+    <nav>
+    <a class="nav-link active" href="index.html">🏠 Início</a>
+    <a class="nav-link" href="classificacao.html">🏁 Classificação</a>
+    <a class="nav-link" href="infracoes.html">⚠️ Infrações</a>
+    <a class="nav-link" href="baianagens.html">😂 Baianagens</a>
+</nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+
+        <span class="season-badge">TEMPORADA 2025-2026</span>
+
+        <h1>LIGA ACJ Championship</h1>
+
+        <p class="subtitle">
+            Resultados oficiais, punições aplicadas e o caos documentado.
+        </p>
+
+        <!-- CALENDÁRIO -->
+        <div class="season-wrapper">
+
+            <div class="progress-line">
+                <div class="progress-fill" id="progressFill"></div>
+
+                <div class="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <div class="stage-labels">
+
+                <div class="stage"><div class="name">Bahrein</div><div class="date">22/11</div></div>
+                <div class="stage"><div class="name">Áustria</div><div class="date">06/12</div></div>
+                <div class="stage"><div class="name">HSR</div><div class="date">13/12</div></div>
+                <div class="stage"><div class="name">Spa</div><div class="date">27/12</div></div>
+                <div class="stage"><div class="name">Le Mans</div><div class="date">10/01</div></div>
+                <div class="stage"><div class="name">Monza</div><div class="date">24/01</div></div>
+                <div class="stage"><div class="name">Hockenheim</div><div class="date">07/02</div></div>
+                <div class="stage"><div class="name">Silverstone</div><div class="date">21/02</div></div>
+                <div class="stage"><div class="name">Daytona</div><div class="date">07/03</div></div>
+                <div class="stage"><div class="name">Fuji</div><div class="date">21/03</div></div>
+                <div class="stage"><div class="name">Interlagos</div><div class="date">04/04</div></div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="stat-card">
+        <h3>Etapa Atual</h3>
+        <p class="highlight" id="currentStage">-</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Corridas Disputadas</h3>
+        <p class="highlight" id="racesCompleted">-</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Punições Aplicadas</h3>
+        <p class="highlight red">10</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Líder do Campeonato</h3>
+        <p class="highlight blue">Vini Vitalício</p>
+    </div>
+</section>
+
+<section class="gp-box">
+    <h2 class="gp-title">Grande Prêmio Silverstone - Etapa 8</h2>
+
+    <div class="gp-images">
+        <img src="images/resultado-silverstone.webp" alt="Resultado Silverstone">
+        <img src="images/resultado-silverstone2.webp" alt="Classificação Silverstone">
+    </div>
+
+    <p class="gp-description">
+       A Etapa 8 em Silverstone foi marcada por uma vitória dominante de Vini Vitalício, consolidando sua liderança no campeonato. Leandro Barreto e Douglas da Luz completaram o pódio após uma corrida intensa com disputas estratégicas e abandono importante de Yuji Migiyama.
+    </p>
+</section>
+<section class="gp-box">
+    <h2 class="gp-title">Grande Prêmio Hockenheim - Etapa 7</h2>
+
+    <div class="gp-images">
+        <img src="images/resultado-hockenheim.webp" alt="Resultado hockenheim">
+        <img src="images/resultado-hockenheim2.jpeg" alt="Classificação hockenheim">
+        <img src="images/resultado-hockenheim3.jpeg" alt="Classificação sprint hockenheim">
+    </div>
+
+    <p class="gp-description">
+       A Etapa 7 contou com a primeira edição da corrida sprint, Vini Vitalício de forma implacável liderou ambas corridas para de aproximar cada vez mais da vitória do campeonato. 
+    </p>
+</section>
+
+<footer>
+© 2026 LIGA ACJ
+</footer>
+
+<!-- SCRIPT AUTOMÁTICO DA TEMPORADA -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+    const raceDates = [
+        new Date("2025-11-22"),
+        new Date("2025-12-06"),
+        new Date("2025-12-13"),
+        new Date("2025-12-27"),
+        new Date("2026-01-10"),
+        new Date("2026-01-24"),
+        new Date("2026-02-07"),
+        new Date("2026-02-21"),
+        new Date("2026-03-07"),
+        new Date("2026-03-21"),
+        new Date("2026-04-04")
+    ];
+
+    const today = new Date();
+    const dots = document.querySelectorAll(".dot");
+    const stages = document.querySelectorAll(".stage");
+    const progressFill = document.getElementById("progressFill");
+    const currentStageText = document.getElementById("currentStage");
+    const racesCompletedText = document.getElementById("racesCompleted");
+
+    let currentIndex = 0;
+
+    for (let i = 0; i < raceDates.length; i++) {
+        if (today >= raceDates[i]) {
+            currentIndex = i+1;
+        }
+    }
+
+    dots.forEach((dot, index) => {
+        dot.classList.remove("completed", "active");
+        stages[index].classList.remove("completed", "active");
+
+        if (index < currentIndex) {
+            dot.classList.add("completed");
+            stages[index].classList.add("completed");
+        } else if (index === currentIndex) {
+            dot.classList.add("active");
+            stages[index].classList.add("active");
+        }
+    });
+
+    const progressPercent = ((currentIndex + 1) / raceDates.length) * 100;
+    progressFill.style.width = progressPercent + "%";
+
+    currentStageText.textContent = currentIndex + 1;
+    racesCompletedText.textContent = currentIndex;
+
+});
+</script>
+
+</body>
+</html>
