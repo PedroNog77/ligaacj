@@ -617,18 +617,34 @@ nav {
 /* 📱 TIMELINE MOBILE FIX DEFINITIVO */
 /* ================================= */
 
+/* ================================= */
+/* 📱 TIMELINE MOBILE FIX DEFINITIVO */
+/* ================================= */
+
 @media (max-width: 768px) {
 
     .season-wrapper {
         overflow-x: auto;
-        padding: 0 100px; /* 👈 AQUI está o ajuste correto */
+        padding: 0 0px; /* mantém como você já está usando */
     }
 
+    /* largura total da timeline */
     .progress-line,
     .stage-labels {
         min-width: 1100px;
     }
 
+    /* 🔧 MOVE APENAS A BARRA */
+    .progress-line {
+        transform: translateX(20px);
+    }
+
+    /* garante que o preenchimento acompanhe */
+    .progress-fill {
+        transform: translateX(20px);
+    }
+
+    /* mantém textos no lugar */
     .stage {
         transform: none !important;
     }
@@ -638,7 +654,6 @@ nav {
     }
 
 }
-
 
 
 
