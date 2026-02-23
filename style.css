@@ -583,3 +583,33 @@ nav {
     }
 
 }
+/* ================================= */
+/* 🏆 PÓDIO – MOBILE ONLY */
+/* ================================= */
+
+@media (max-width: 768px) {
+
+    .top3 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .podium {
+        width: 100%;
+        max-width: 340px;
+        height: auto !important;
+        padding: 25px 20px;
+    }
+
+    .first,
+    .second,
+    .third {
+        height: auto !important;
+    }
+
+    .podium h2 {
+        font-size: 22px;
+    }
+
+}
