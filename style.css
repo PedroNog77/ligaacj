@@ -621,7 +621,7 @@ nav {
 
     .season-wrapper {
         overflow-x: auto;
-        padding-bottom: 10px;
+        padding: 0 20px; /* 👈 AQUI está o ajuste correto */
     }
 
     .progress-line,
@@ -629,14 +629,6 @@ nav {
         min-width: 1100px;
     }
 
-    /* 🔥 AQUI está o ajuste fino real */
-    .season-wrapper::before {
-        content: "";
-        display: inline-block;
-        width: 50px; /* ajuste fino aqui */
-    }
-
-    /* Remove deslocamento desktop */
     .stage {
         transform: none !important;
     }
