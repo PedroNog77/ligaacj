@@ -92,7 +92,17 @@ html {
 
     text-align: center; /* 👈 ISSO resolve */
     
-    background: linear-gradient(135deg, #374e34, #000000, #eed500);
+    background: linear-gradient(340deg, #374e34, #000000, #eed500);
+}
+.heros {
+    height: 250px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    text-align: center; /* 👈 ISSO resolve */
+    
+    background: linear-gradient(340deg, #374e34, #000000, #eed500);
 }
 
 .hero-content {
@@ -686,7 +696,6 @@ nav {
     }
 
 }
-
 
 
 
