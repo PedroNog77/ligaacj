@@ -631,7 +631,7 @@ nav {
 
     /* 🔥 MOVE SOMENTE A ESTRUTURA DA BARRA */
     .progress-line {
-        margin-left: 30px;
+        margin-left: 35px;
         background: none;
         position: relative;
     }
@@ -686,6 +686,7 @@ nav {
     }
 
 }
+
 
 
 
