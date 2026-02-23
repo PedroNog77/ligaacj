@@ -633,7 +633,7 @@ nav {
     .season-wrapper::before {
         content: "";
         display: inline-block;
-        width: 25px; /* ajuste fino aqui */
+        width: 50px; /* ajuste fino aqui */
     }
 
     /* Remove deslocamento desktop */
@@ -646,6 +646,7 @@ nav {
     }
 
 }
+
 
 
 
