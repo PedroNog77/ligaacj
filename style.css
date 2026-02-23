@@ -613,36 +613,25 @@ nav {
     }
 
 }
+/* ================================= */
+/* 📱 TIMELINE MOBILE FIX DEFINITIVO */
+/* ================================= */
+
 @media (max-width: 768px) {
 
-    /* container scroll */
     .season-wrapper {
         overflow-x: auto;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
 
-    /* estrutura interna com largura real */
-    .season-wrapper > * {
-        min-width: 900px;
-    }
-
-    .progress-line {
-        width: 100%;
-    }
-
-    .dots {
-        width: 100%;
-    }
-
+    .progress-line,
     .stage-labels {
-        width: 100%;
-        gap: 0;
+        min-width: 950px;
     }
 
-    /* remove QUALQUER deslocamento lateral */
+    /* REMOVE o deslocamento lateral que quebra o alinhamento */
     .stage {
         transform: none !important;
-        min-width: 120px;
     }
 
     .stage:hover {
