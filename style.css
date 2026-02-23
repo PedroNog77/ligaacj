@@ -632,6 +632,7 @@ nav {
     /* 🔥 MOVE SOMENTE A ESTRUTURA DA BARRA (linha + fill + dots) */
     .progress-line {
         margin-left: 30px;
+         background: none;
     }
     .progress-line::before {
         content: "";
@@ -668,6 +669,7 @@ nav {
     }
 
 }
+
 
 
 
