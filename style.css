@@ -614,12 +614,12 @@ nav {
 
 }
 /* ================================= */
-/* 📱 CORREÇÃO REAL DA BARRA MOBILE */
+/* 📱 CALENDÁRIO MOBILE CORRETO */
 /* ================================= */
 
 @media (max-width: 768px) {
 
-    /* Remove o deslocamento manual que quebra tudo */
+    /* Remove o deslocamento que você colocou */
     .stage {
         transform: none !important;
         min-width: 120px;
@@ -629,21 +629,15 @@ nav {
         transform: none !important;
     }
 
-    /* Permite scroll horizontal controlado */
+    /* Wrapper vira scroll horizontal real */
     .season-wrapper {
         overflow-x: auto;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
 
-    .progress-line,
-    .dots,
-    .stage-labels {
+    /* Criamos um container interno largo */
+    .season-wrapper > * {
         min-width: 1000px;
-    }
-
-    .stage-labels {
-        flex-wrap: nowrap;
-        gap: 25px;
     }
 
 }
