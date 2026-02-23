@@ -632,9 +632,18 @@ nav {
     /* 🔥 MOVE SOMENTE A ESTRUTURA DA BARRA (linha + fill + dots) */
     .progress-line {
         margin-left: 30px;
-        pmargin-top: 30px;
     }
-
+    .progress-line::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 4px; /* ajuste fino aqui */
+        height: 6px;
+        background: #1f2937;
+        border-radius: 10px;
+        z-index: 0;
+    }
     /* garante que nada interno tenha offset próprio */
     .progress-fill,
     .dots {
@@ -652,6 +661,7 @@ nav {
     }
 
 }
+
 
 
 
