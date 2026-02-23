@@ -512,3 +512,74 @@ nav {
         inset 0 1px 0 rgba(255,255,255,0.04),
         0 10px 30px rgba(0,0,0,0.4);
 }
+/* ================================= */
+/* 📱 MOBILE ONLY – NÃO AFETA PC */
+/* ================================= */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        margin-left: 0;
+    }
+
+    /* HERO */
+    .hero {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    /* CALENDÁRIO – scroll horizontal só no mobile */
+    .season-wrapper {
+        overflow-x: auto;
+    }
+
+    .progress-line {
+        min-width: 900px;
+    }
+
+    .stage-labels {
+        min-width: 900px;
+    }
+
+    /* REMOVE deslocamento lateral no mobile */
+    .stage {
+        transform: none !important;
+    }
+
+    .stage:hover {
+        transform: translateY(-2px) !important;
+    }
+
+    /* PÓDIO */
+    .top3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .podium {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* TABELA */
+    .standings-table {
+        font-size: 14px;
+    }
+
+}
