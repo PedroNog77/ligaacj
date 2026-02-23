@@ -624,28 +624,26 @@ nav {
         padding-bottom: 10px;
     }
 
-    /* Barra maior */
     .progress-line,
     .stage-labels {
-        min-width: 1100px; /* antes era 950px */
+        min-width: 1100px;
     }
 
-    /* Empurra tudo levemente para a direita */
+    /* Move tudo junto */
     .progress-line {
-        padding-left: 25px;
-        padding-right: 25px;
+        margin-left: 25px;
     }
 
     .stage-labels {
-        padding-left: 25px;
-        padding-right: 25px;
+        margin-left: 25px;
     }
 
+    /* Remove qualquer padding que esteja interferindo */
+    .progress-line,
     .dots {
-        padding: 0 25px;
+        padding: 0;
     }
 
-    /* REMOVE o deslocamento lateral que quebra alinhamento */
     .stage {
         transform: none !important;
     }
