@@ -631,11 +631,11 @@ nav {
 
     /* Move tudo junto */
     .progress-line {
-        margin-left: 30px;
+        margin-left: 40px;
     }
 
     .stage-labels {
-        margin-left: 30px;
+        margin-left: 40px;
     }
 
     /* Remove qualquer padding que esteja interferindo */
@@ -653,4 +653,5 @@ nav {
     }
 
 }
+
 
