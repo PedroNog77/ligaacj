@@ -613,39 +613,4 @@ nav {
     }
 
 }
-/* ================================= */
-/* 📱 CALENDÁRIO MOBILE CORRETO */
-/* ================================= */
 
-@media (max-width: 768px) {
-
-    /* Remove o deslocamento que você colocou */
-    .stage {
-        transform: none !important;
-        min-width: 120px;
-    }
-
-    .stage:hover {
-        transform: none !important;
-    }
-
-    /* Wrapper vira scroll horizontal real */
-    .season-wrapper {
-        overflow-x: auto;
-        padding-bottom: 20px;
-    }
-
-    /* Criamos um container interno largo */
-    .season-wrapper > * {
-        min-width: 1000px;
-    }
-
-}
-@media (max-width: 768px) {
-
-    .progress-line {
-        width: 140%;
-        margin-left: -20%;
-    }
-
-}
