@@ -638,7 +638,7 @@ nav {
         position: absolute;
         left: 0;
         right: 0;
-        top: 6px; /* ajuste fino aqui */
+        top: 8px; /* ajuste fino aqui */
         height: 6px;
         background: #1f2937;
         border-radius: 10px;
@@ -668,6 +668,7 @@ nav {
     }
 
 }
+
 
 
 
