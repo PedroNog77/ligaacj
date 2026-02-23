@@ -61,7 +61,7 @@ nav a:hover,
 nav .active {
     color: #f5b942;
 }
-/* ===== FIX LINKS DO CALENDÁRIO ===== */
+
 
 .stage a {
     color: inherit !important;
@@ -82,7 +82,7 @@ html {
     opacity: 0.8;
     cursor: pointer;
 }
-/* ===== HERO ===== */
+
 
 .hero {
     height: 400px;
@@ -139,7 +139,7 @@ html {
     
 }
 
-/* Linha principal */
+
 .progress-line {
     position: relative;
     height: 6px;
@@ -149,14 +149,14 @@ html {
 }
 
 .progress-fill {
-    width: 66.6%; /* ajuste conforme etapa */
+    width: 66.6%; /* ajustar conforme etapa */
     height: 100%;
     background: #f5b942;
     border-radius: 10px;
     
 }
 
-/* Pontinhos */
+
 .dots {
     position: absolute;
     top: 50%;
@@ -186,7 +186,7 @@ html {
     transform: scale(1.2);
 }
 
-/* Labels */
+
 .stage-labels {
     display: flex;
     justify-content: space-between;
@@ -404,6 +404,7 @@ footer {
 .standings-table tbody tr:hover {
     background: #1a2235;
 }
+
 /* ===== NAVIGATION ===== */
 
 nav {
@@ -415,21 +416,22 @@ nav {
     text-decoration: none;
     color: white;
     padding: 10px 18px;
-    border-radius: 20px; /* squircle */
+    border-radius: 20px; 
     transition: 0.3s ease;
     position: relative;
 }
 
-/* Hover suave */
+
 .nav-link:hover {
     background: rgba(255,255,255,0.1);
 }
 
-/* ABA ATIVA */
+
 .nav-link.active {
     background: linear-gradient(135deg, #3b82f6, #2563eb);
     box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
 }
+
 /* ===== INFRAÇÕES ===== */
 
 .infractions-container {
@@ -492,7 +494,7 @@ nav {
 
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%; 
     height: 0;
     overflow: hidden;
     border-radius: 15px;
@@ -509,7 +511,7 @@ nav {
 .video-description {
     margin-top: 20px;
 }
-/* ===== EDGE HIGHLIGHT NOS SQUIRCLES ===== */
+
 
 .stat-card,
 .gp-box,
@@ -522,9 +524,8 @@ nav {
         inset 0 1px 0 rgba(255,255,255,0.04),
         0 10px 30px rgba(0,0,0,0.4);
 }
-/* ================================= */
-/* 📱 MOBILE ONLY – NÃO AFETA PC */
-/* ================================= */
+
+/* MODELO CELULAR */
 
 @media (max-width: 768px) {
 
@@ -544,7 +545,7 @@ nav {
         margin-left: 0;
     }
 
-    /* HERO */
+
     .hero {
         height: auto;
         padding: 60px 20px;
@@ -554,7 +555,7 @@ nav {
         font-size: 30px;
     }
 
-    /* CALENDÁRIO – scroll horizontal só no mobile */
+
     .season-wrapper {
         overflow-x: auto;
     }
@@ -567,7 +568,7 @@ nav {
         min-width: 900px;
     }
 
-    /* REMOVE deslocamento lateral no mobile */
+
     .stage {
         transform: none !important;
     }
@@ -576,7 +577,7 @@ nav {
         transform: translateY(-2px) !important;
     }
 
-    /* PÓDIO */
+
     .top3 {
         flex-direction: column;
         align-items: center;
@@ -587,15 +588,14 @@ nav {
         max-width: 320px;
     }
 
-    /* TABELA */
+
     .standings-table {
         font-size: 14px;
     }
 
 }
-/* ================================= */
-/* 🏆 PÓDIO – MOBILE ONLY */
-/* ================================= */
+
+
 
 @media (max-width: 768px) {
 
@@ -623,9 +623,7 @@ nav {
     }
 
 }
-/* ================================= */
-/* 📱 TIMELINE MOBILE – AJUSTE FINO */
-/* ================================= */
+
 
 @media (max-width: 768px) {
 
@@ -639,14 +637,14 @@ nav {
         min-width: 1100px;
     }
 
-    /* 🔥 MOVE SOMENTE A ESTRUTURA DA BARRA */
+
     .progress-line {
         margin-left: 35px;
         background: none;
         position: relative;
     }
 
-    /* Linha escura */
+  
     .progress-line::before {
         content: "";
         position: absolute;
@@ -656,19 +654,19 @@ nav {
         height: 6px;
         background: #1f2937;
         border-radius: 10px;
-        z-index: 0; /* 🔥 atrás de tudo */
+        z-index: 0; 
     }
 
-    /* Linha amarela */
+
     .progress-fill {
         position: absolute;
         left: 0;
         top: 7px;
         height: 6px;
-        z-index: 1; /* 🔥 acima da escura */
+        z-index: 1; 
     }
 
-    /* 🔥 Dots ficam na frente da barra */
+
     .dots {
         position: absolute;
         z-index: 3;
@@ -679,14 +677,14 @@ nav {
         z-index: 4;
     }
 
-    /* garante que nada interno tenha offset próprio */
+
     .progress-fill,
     .dots {
         margin-left: 0;
         transform: none;
     }
 
-    /* mantém textos fixos */
+
     .stage {
         transform: none !important;
     }
@@ -696,7 +694,6 @@ nav {
     }
 
 }
-
 
 
 
