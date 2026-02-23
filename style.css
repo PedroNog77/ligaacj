@@ -641,3 +641,11 @@ nav {
     }
 
 }
+@media (max-width: 768px) {
+
+    .progress-line {
+        width: 140%;
+        margin-left: -20%;
+    }
+
+}
