@@ -632,6 +632,7 @@ nav {
     /* 🔥 MOVE SOMENTE A ESTRUTURA DA BARRA (linha + fill + dots) */
     .progress-line {
         margin-left: 40px;
+        padding-top: 10px;
     }
 
     /* garante que nada interno tenha offset próprio */
@@ -651,6 +652,7 @@ nav {
     }
 
 }
+
 
 
 
