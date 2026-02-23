@@ -621,7 +621,7 @@ nav {
 
     .season-wrapper {
         overflow-x: auto;
-        padding: 0 20px; /* 👈 AQUI está o ajuste correto */
+        padding: 0 100px; /* 👈 AQUI está o ajuste correto */
     }
 
     .progress-line,
@@ -638,6 +638,7 @@ nav {
     }
 
 }
+
 
 
 
