@@ -419,3 +419,425 @@ nav .active {
     }
 
 }
+
+/* ===== RESET ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0b1220;
+    color: #fff;
+}
+
+/* ===== TIPOGRAFIA ===== */
+
+h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cbd5e1;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: #0e1628;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #aaa;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+nav a:hover,
+nav .active {
+    color: #f5b942;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.nav-link.active {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
+}
+
+/* ===== FIX LINKS DO CALENDÁRIO ===== */
+
+.stage a {
+    color: inherit !important;
+    text-decoration: none !important;
+    display: block;
+}
+
+.stage a:visited {
+    color: inherit !important;
+}
+
+.stage-link:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* ===== HERO ===== */
+
+.hero {
+    min-height: 400px;
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #374e34, #000000, #eed500);
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.season-badge {
+    display: inline-block;
+    padding: 6px 15px;
+    background: #1f2937;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #f5b942;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    margin-bottom: 50px;
+}
+
+/* ===== CALENDÁRIO ===== */
+
+.season-wrapper {
+    margin-top: 40px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+.progress-line {
+    position: relative;
+    height: 6px;
+    background: #1f2937;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.progress-fill {
+    width: 66.6%;
+    height: 100%;
+    background: #f5b942;
+    border-radius: 10px;
+}
+
+.dots {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    background: #334155;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.dot.completed {
+    background: #94a3b8;
+}
+
+.dot.active {
+    background: #f5b942;
+    transform: scale(1.2);
+}
+
+/* Labels */
+
+.stage-labels {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 19px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.stage {
+    text-align: center;
+    font-size: 13px;
+    color: #64748b;
+    min-width: 80px;
+    flex: 0 0 auto;
+    transform: translateX(-30px);
+}
+
+.stage .name {
+    font-weight: 500;
+}
+
+.stage .date {
+    font-size: 12px;
+    margin-top: 4px;
+    opacity: 0.7;
+}
+
+.stage.completed {
+    color: #94a3b8;
+}
+
+.stage.active {
+    color: #f5b942;
+    font-weight: 600;
+}
+
+.stage:hover {
+    color: #ffffff;
+    transform: translateX(-30px) translateY(-2px);
+    cursor: pointer;
+}
+
+/* ===== STATS ===== */
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background: #111827;
+    padding: 30px 25px;
+    border-radius: 16px;
+    width: 230px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.highlight {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+.red { color: #ff4d4d; }
+.blue { color: #4da6ff; }
+
+/* ===== GP BOX ===== */
+
+.gp-box {
+    scroll-margin-top: 10vh;
+    background: #0f172a;
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 800px;
+}
+
+.gp-title {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #f5b942;
+}
+
+.gp-images {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gp-images img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.gp-images img:hover {
+    transform: scale(1.03);
+}
+
+.gp-description {
+    margin-top: 35px;
+    text-align: center;
+}
+
+/* ===== TABELA ===== */
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.standings-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #111827;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.standings-table thead {
+    background: #1f2937;
+}
+
+.standings-table th,
+.standings-table td {
+    padding: 15px;
+    text-align: center;
+}
+
+.standings-table tbody tr {
+    border-bottom: 1px solid #1f2937;
+    transition: 0.3s;
+}
+
+.standings-table tbody tr:hover {
+    background: #1a2235;
+}
+
+/* ===== INFRAÇÕES ===== */
+
+.infractions-container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.infraction-card {
+    background: #0f172a;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.penalty {
+    background: #ef4444;
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.penalty.drive { background: #f97316; }
+.penalty.warning { background: #000; color: #fff; }
+
+/* ===== BAIANAGENS ===== */
+
+.baianagens-container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.video-card {
+    background: #0f172a;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav a {
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .stage {
+        transform: none;
+    }
+
+}
