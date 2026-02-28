@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LIGA ACJ</title>
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
@@ -281,7 +281,7 @@ document.addEventListener("DOMContentLoaded", function() {
         new Date(2026, 1, 21),
         new Date(2026, 2, 7),
         new Date(2026, 2, 21),
-        new Date(2026, 3, 4)
+        new Date(2026, 3, 4),
         new Date(2026, 3, 18)
     ];
 
@@ -291,8 +291,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const dots = document.querySelectorAll(".dot");
     const stages = document.querySelectorAll(".stage");
     const progressFill = document.getElementById("progressFill");
-    const currentStageText = document.getElementById("currentStage");
-    const racesCompletedText = document.getElementById("racesCompleted");
 
     let lastCompleted = -1;
 
@@ -318,9 +316,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     if (lastCompleted >= 0) {
-        progressFill.style.width = ((lastCompleted + 1) / raceDates.length) * 100 + "%";
-        currentStageText.textContent = lastCompleted + 2;
-        racesCompletedText.textContent = lastCompleted + 1;
+        progressFill.style.width =
+            ((lastCompleted + 1) / raceDates.length) * 100 + "%";
     }
 
 });
@@ -328,6 +325,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </body>
 </html>
+
 
 
 
