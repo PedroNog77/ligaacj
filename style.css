@@ -90,7 +90,7 @@ html {
     padding-left: 20px;
     padding-right: 20px;
 
-    text-align: center; /* 👈 ISSO resolve */
+    text-align: center; 
     
     background: linear-gradient(340deg, #374e34, #000000, #eed500);
 }
@@ -100,8 +100,7 @@ html {
     padding-left: 20px;
     padding-right: 20px;
 
-    text-align: center; /* 👈 ISSO resolve */
-    
+    text-align: center; 
     background: linear-gradient(340deg, #374e34, #000000, #eed500);
 }
 
@@ -149,7 +148,7 @@ html {
 }
 
 .progress-fill {
-    width: 66.6%; /* ajustar conforme etapa */
+  
     height: 100%;
     background: #f5b942;
     border-radius: 10px;
@@ -191,7 +190,7 @@ html {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    gap: 19px;
+    gap: 69px;
 }
 
 .stage {
@@ -345,11 +344,17 @@ footer {
      border-radius: 25px;
     padding: 25px;
 }
-
+.podium-car {
+     margin-top: auto;
+    width: 170px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .first {
     background: linear-gradient(135deg, #f5b942, #d89c2f);
     color: #000;
-    height: 320px;
+    height: 240px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -358,7 +363,7 @@ footer {
 .second {
     background: #9ca3af;
     color: #000;
-    height: 270px;
+    height: 240px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -695,7 +700,18 @@ nav {
 
 }
 
+.car-cell {
+    text-align: center;
+    align-items: flex-end; 
+    width: 90px;
+}
 
+.car-cell img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
 
 
